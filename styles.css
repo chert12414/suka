@@ -1,0 +1,132 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  background-image: url('img.jpg');
+  background-size: cover; /* чтобы фон занимал всю доступную область */
+}
+h1{
+  text-align: center;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+nav {
+  background-color: #343a40;
+  padding: 10px 0;
+  text-align: center;
+}
+
+ul.tabs {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.tabs li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.tabButton {
+  background-color: #343a40;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 30px;
+}
+
+.tabButton:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для вкладок */
+.tab {
+  display: none;
+}
+
+/* Кнопка "Вернуться на домашнюю страницу" */
+button.backButton {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+button.backButton:hover {
+  background-color: #218838;
+}
+
+/* Стили для каждой вкладки */
+#uploadTab, #editTab, #statsTab, #graphTab, #helpTab, #devTab {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#uploadTab h2, #editTab h2, #statsTab h2, #graphTab h2, #graphTab h3 {
+  font-size: 24px;
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+#uploadTab button, #editTab button, #statsTab button, #graphTab button, #helpTab button, #devTab button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#uploadTab button:hover, #editTab button:hover, #statsTab button:hover, #graphTab button:hover, #helpTab button:hover, #devTab button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для таблиц */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
